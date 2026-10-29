@@ -1,0 +1,24 @@
+{
+  "name": "pleostest-vehicle-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "stdio MCP server that reads door, window and energy status through the local Android bridge (HYE-31, HYE-35).",
+  "type": "module",
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "bin": {
+    "pleostest-vehicle-mcp": "src/server.mjs"
+  },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.4.0",
+    "zod": "4.2.0"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "2.4.0"
+  }
+}

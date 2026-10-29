@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">pleostest</string>
+    <string name="door_title">앞좌측 문 조회</string>
+    <string name="door_help">Pleos Emulator와 Virtual Console을 실행하고 연결한 뒤 조회하세요. 앞좌측 문을 한 번 읽으며, 자동으로 재시도하지 않습니다.</string>
+    <string name="door_read">앞좌측 문 한 번 조회</string>
+    <string name="door_ready">준비: 버튼을 누르면 지원 확인과 조회를 시작합니다. Service 연결은 아직 확인하지 않았습니다.</string>
+    <string name="door_waiting">지원 확인 및 값 대기 중 (총 10초)…</string>
+    <string name="door_busy">다른 조회(AI 앱 요청 포함)가 진행 중입니다. 기존 조회는 계속되며, 끝난 뒤 다시 누르세요.</string>
+    <string name="door_not_ready">현재 조회를 시작할 수 없습니다(AI 연결 서비스 미연결 또는 종료). 화면을 다시 열어 주세요.</string>
+    <string name="door_closed">닫힘 (이번 조회값 0, 확인된 범위 0~1)</string>
+    <string name="door_open">열림 (이번 조회값 1, 확인된 범위 0~1)</string>
+    <string name="door_no_value">상태 미확인: 콜백을 받았으나 값이 null입니다.</string>
+    <string name="door_unknown_value">원시값 수신: 열림·닫힘 의미를 확인할 수 없습니다.</string>
+    <string name="door_capability_failed">지원 확인 실패: Service·권한·지원 여부를 확인하지 못했습니다.</string>
+    <string name="door_read_unavailable">조회 불가: capability에서 읽기 접근이 허용되지 않았습니다.</string>
+    <string name="door_area_unsupported">영역 미지원: capability에 앞좌측 문이 없습니다.</string>
+    <string name="door_support_unconfirmed">지원 조건 미확인: 영역 또는 값 범위를 확정할 수 없습니다.</string>
+    <string name="door_read_failed">값 조회 실패: 정상 상태를 확인하지 못했습니다.</string>
+    <string name="door_timeout">시간 초과: 총 10초 안에 결과를 확인하지 못했습니다. 늦은 콜백은 버립니다.</string>
+    <string name="door_cancelled">화면 종료로 조회를 취소했습니다.</string>
+    <string name="bridge_connecting">AI 연결 서비스에 연결 중…</string>
+    <string name="bridge_starting">AI 연결 준비 중…</string>
+    <string name="bridge_listening">AI 연결 대기 중: 기기 127.0.0.1:18765. 화면을 닫아도 알림이 있는 동안 응답합니다. 끄려면 아래 종료 버튼이나 알림의 중지를 누르세요.</string>
+    <string name="bridge_failed">AI 연결을 시작하지 못했습니다 (%1$s). 포트 18765 사용 여부를 확인한 뒤 종료하고 화면을 다시 여세요.</string>
+    <string name="bridge_stopped">AI 연결 종료: 연결과 진행 중인 조회를 폐기했습니다. 화면을 닫았다 다시 열면 새로 시작합니다.</string>
+    <string name="bridge_stop">AI 연결 종료</string>
+    <string name="notification_channel_name">AI 연결 유지</string>
+    <string name="notification_title">차량 조회 AI 연결 실행 중</string>
+    <string name="notification_text">기기 127.0.0.1:18765에서 읽기 전용 조회를 받고 있습니다. 중지하면 응답을 멈춥니다.</string>
+    <string name="notification_stop">중지</string>
+    <string name="door_target">대상: %1$s</string>
+    <string name="door_capability">접근: %1$s\n보고된 영역: %2$s\n대상 범위: %3$s ~ %4$s</string>
+    <string name="door_value">원시값: %1$s\n콜백 수신 시각 (UTC): %2$s\n수신 시각은 차량 측 측정 시각이나 값의 최신성을 보장하지 않습니다.</string>
+    <string name="door_error">오류 유형: %1$s</string>
+</resources>
